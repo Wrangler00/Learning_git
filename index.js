@@ -26,6 +26,8 @@ console.time("start");
 a();
 
 
+console.log("how are you doing");
+
 process.on('exit', function () {
     console.timeEnd('start');
 });
