@@ -25,7 +25,7 @@ const a = () => { for (let i = 0; i < BATCH_SIZE; i++)temp(i) }
 console.time("start");
 a();
 
-
+console.log(123)
 console.log("how are you doing");
 
 process.on('exit', function () {
