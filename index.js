@@ -2,6 +2,8 @@
 const BATCH_SIZE = 4;
 let count = 4;
 
+let aman = 12345678;
+
 async function upload(t) {
     return new Promise((r, j) => {
         setTimeout(() => {
@@ -15,7 +17,7 @@ function temp(i) {
         if (count) {
             --count;
             temp(BATCH_SIZE + i);
-        }ccds
+        } ccds
     })
 }
 
@@ -25,9 +27,10 @@ const a = () => { for (let i = 0; i < BATCH_SIZE; i++)temp(i) }
 console.time("start");
 a();
 
-console.log(123)
-console.log("how are you doing");
-
 process.on('exit', function () {
     console.timeEnd('start');
 });
+
+
+for (let i = 0; i < 100; i++)
+    console.log(i);
